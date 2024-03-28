@@ -1,4 +1,4 @@
-import { Component, Mesh, Object3D, Plugin, Vector3 } from "../../libs/xviewer";
+import { Component, Mesh, Object3D, Plugin, Vector3 } from "~/libs/xviewer";
 import { cameraCenter } from "./ForwardCamera";
 import { M_BigCloud, M_BigCloudBG } from "./Materials";
 

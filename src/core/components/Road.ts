@@ -1,6 +1,6 @@
 
-import { gameManager } from "../../core/GameManager";
-import { AnimationMixer, Color, Component, LoopOnce, Mesh, Object3D, TWEEN, Vector3 } from "../../libs/xviewer";
+import { gameManager } from "~/core/GameManager";
+import { AnimationMixer, Color, Component, LoopOnce, Mesh, Object3D, TWEEN, Vector3 } from "~/libs/xviewer";
 import { cameraCenter } from "./ForwardCamera";
 import { toonMaterials } from "./Materials";
 

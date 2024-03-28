@@ -1,5 +1,6 @@
-import { ACES_Inv } from "../../shader/chunk/ACES.chunk";
-import { Color, Mesh, MeshPhysicalMaterial, PlaneGeometry, Plugin, ShaderMaterial, SphereGeometry, Vector3, property } from "../libs/xviewer";
+import { ACES_Inv } from "~/shader/chunk/ACES.chunk";
+import { Color, Mesh, MeshPhysicalMaterial, PlaneGeometry, Plugin, ShaderMaterial, SphereGeometry, Vector3, property } from "~/libs/xviewer";
+import { cameraCenter } from "~/core/components/ForwardCamera";
 
 const sphereMat = new ShaderMaterial({
     vertexShader: `
@@ -9,7 +10,7 @@ const sphereMat = new ShaderMaterial({
     `,
     fragmentShader: `
     uniform vec3 color;
-    uniform float intensity;  
+    uniform float intensity;
     ${ACES_Inv}
     void main() {
         vec3 col = ACES_Inv(color);

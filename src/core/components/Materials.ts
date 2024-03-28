@@ -8,19 +8,19 @@ import {
     TextureLoader,
     WebGLRenderer,
     property
-} from "../../libs/xviewer";
+} from "~/libs/xviewer";
 
-import { ACES_fog_fragment } from "../../shader/chunk/ACES_fog_fragment.chunk";
-import { RE_Direct_ToonPhysical } from "../../shader/chunk/RE_Direct_ToonPhysical.chunk";
-import { RE_Direct_ToonPhysical_Road } from "../../shader/chunk/RE_Direct_ToonPhysical.chunk_Road";
-import { lights_fragment_beginToon } from "../../shader/chunk/lights_fragment_beginToon";
-import { frag as bigCloud } from "../../shader/fragment/BigCloud.frag";
-import { frag as bigCloudBG } from "../../shader/fragment/BigCloudBG.frag";
-import { frag as cloudFrag } from "../../shader/fragment/cloud.frag";
-import { frag as hashFogFrag } from "../../shader/fragment/hashFog.frag";
-import { frag as polarLightFrag } from "../../shader/fragment/polarLight.frag";
-import { vert as cloudVert } from "../../shader/vertex/cloud.vert";
-import { vert as simpleVert } from "../../shader/vertex/simple.vert";
+import { ACES_fog_fragment } from "~/shader/chunk/ACES_fog_fragment.chunk";
+import { RE_Direct_ToonPhysical } from "~/shader/chunk/RE_Direct_ToonPhysical.chunk";
+import { RE_Direct_ToonPhysical_Road } from "~/shader/chunk/RE_Direct_ToonPhysical.chunk_Road";
+import { lights_fragment_beginToon } from "~/shader/chunk/lights_fragment_beginToon";
+import { frag as bigCloud } from "~/shader/fragment/BigCloud.frag";
+import { frag as bigCloudBG } from "~/shader/fragment/BigCloudBG.frag";
+import { frag as cloudFrag } from "~/shader/fragment/cloud.frag";
+import { frag as hashFogFrag } from "~/shader/fragment/hashFog.frag";
+import { frag as polarLightFrag } from "~/shader/fragment/polarLight.frag";
+import { vert as cloudVert } from "~/shader/vertex/cloud.vert";
+import { vert as simpleVert } from "~/shader/vertex/simple.vert";
 
 const textureLoader = new TextureLoader();
 export const texture_Cloud = textureLoader.load("Genshin/Login/Textures/Tex_0062.png");

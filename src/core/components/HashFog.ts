@@ -1,4 +1,4 @@
-import { Component, Mesh, Object3D, PlaneGeometry } from "../../libs/xviewer";
+import { Component, Mesh, Object3D, PlaneGeometry } from "~/libs/xviewer";
 import { M_HashFog } from "./Materials";
 import { cameraCenter } from "./ForwardCamera";
 

@@ -6,7 +6,7 @@ import {
     Plugin,
     RGBAFormat,
     Vector3
-} from "../../libs/xviewer";
+} from "~/libs/xviewer";
 
 
 function inv_rrt_odt_fit(v: number): number {

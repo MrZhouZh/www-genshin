@@ -20,7 +20,10 @@
     "strict": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   },
   "include": [
     "src"

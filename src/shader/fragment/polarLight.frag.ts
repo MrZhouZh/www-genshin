@@ -1,4 +1,4 @@
-import { random } from "../chunk/random.chunk";
+import { random } from "~/shader/chunk/random.chunk";
 
 export const frag=/*glsl */`varying vec3 vPosition;
 varying vec3 vNormal;

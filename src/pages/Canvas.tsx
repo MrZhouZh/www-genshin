@@ -1,7 +1,8 @@
-import './Canvas.less';
 import { useEffect, useRef, useState } from "react";
-import { Game } from "../core/Game";
-import { gameManager } from '../core/GameManager';
+import { Game } from "~/core/Game";
+import { gameManager } from '~/core/GameManager';
+
+import './Canvas.less';
 
 let width = document.documentElement.clientWidth;
 let height = document.documentElement.clientHeight;

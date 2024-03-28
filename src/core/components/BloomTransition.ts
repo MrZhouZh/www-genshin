@@ -3,9 +3,9 @@ import {
     EffectPlugin,
     TWEEN,
     Uniform,
-} from "../../libs/xviewer";
-import { ACES_Inv } from "../../shader/chunk/ACES.chunk";
-import { rgb_hsv } from "../../shader/chunk/rgb_hsv.chunk";
+} from "~/libs/xviewer";
+import { ACES_Inv } from "~/shader/chunk/ACES.chunk";
+import { rgb_hsv } from "~/shader/chunk/rgb_hsv.chunk";
 
 class CustomEffect extends Effect {
 
@@ -18,8 +18,8 @@ class CustomEffect extends Effect {
             void mainImage(const in vec4 inputColor, const in vec2 uv, out vec4 outputColor) {
                 vec3 linear = aces_fitted(inputColor.rgb);
                 vec3 hsv = rgb2hsv(linear);
-                hsv.z += intensity; 
-                
+                hsv.z += intensity;
+
                 vec3 color = mix(hsv2rgb(hsv),vec3(1.),whiteAlpha);
                 color = clamp(color,vec3(0.),vec3(1.));
                 color = ACES_Inv(color);

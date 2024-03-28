@@ -1,4 +1,4 @@
-import { random } from "../chunk/random.chunk";
+import { random } from "~/shader/chunk/random.chunk";
 
 export const vert =/*glsl */`varying vec3 vPosition;
 varying vec3 vNormal;
@@ -34,7 +34,7 @@ void main() {
     float rn = ceil(random(instPosition.xy)*wh.x*wh.y);
     vec2 cell = vec2(1.,1.)/wh;vUv = uv/wh;
     vUv+=vec2(cell.x*mod(rn,wh.x),cell.y*(ceil(rn/wh.x)-1.));
-    
+
     gl_Position = projectionMatrix * modelViewMatrix * vec4(vPosition, 1.0);
     viewerUV = projectionMatrix*modelViewMatrix * vec4(vPosition, 1.0);
     viewerUV = vec4((viewerUV.xyz / viewerUV.w).xy* 0.5 + 0.5,0.,1.);

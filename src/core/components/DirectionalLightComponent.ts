@@ -5,7 +5,7 @@ import {
     Vector3,
     Object3D,
     property
-} from "../../libs/xviewer";
+} from "~/libs/xviewer";
 import { cameraCenter } from "./ForwardCamera";
 
 export const directionalLight = new DirectionalLight(0xff6222, 35);

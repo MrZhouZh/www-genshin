@@ -12,14 +12,14 @@ import {
     Quaternion,
     TextureLoader,
     Vector3
-} from "../../libs/xviewer";
-import { zLength } from "../datas/Config";
+} from "~/libs/xviewer";
+import { zLength } from "~/core/datas/Config";
+import { MashList } from "~/core/datas/PolarLightList";
 
-import { frag } from "../../shader/fragment/star.frag";
-import { vert } from "../../shader/vertex/star.vert";
+import { frag } from "~/shader/fragment/star.frag";
+import { vert } from "~/shader/vertex/star.vert";
 import { cameraCenter } from "./ForwardCamera";
 import { M_PolarLight } from "./Materials";
-import { MashList } from "../datas/PolarLightList";
 
 interface TransformInfo {
     position: Vector3,

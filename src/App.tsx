@@ -1,10 +1,11 @@
-import './App.css'
 import { useEffect, useRef, useState } from 'react'
 import { Menu } from './pages/Menu'
 import { Preloader } from './pages/Preloader'
 import { gameManager } from './core/GameManager'
 import { unscheduleDelay } from './pages/Scheduler'
 import { Canvas } from './pages/Canvas'
+
+import './App.css'
 
 export function App() {
   const [loading, setLoading] = useState(true);

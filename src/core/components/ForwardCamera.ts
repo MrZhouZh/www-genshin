@@ -1,4 +1,4 @@
-import { Component, TWEEN, Vector3 } from "../../libs/xviewer";
+import { Component, TWEEN, Vector3 } from "~/libs/xviewer";
 
 export const cameraCenter = new Vector3()
 

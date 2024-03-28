@@ -1,5 +1,5 @@
-import { ACES_Inv } from "../chunk/ACES.chunk";
-import { random } from "../chunk/random.chunk";
+import { ACES_Inv } from "~/shader/chunk/ACES.chunk";
+import { random } from "~/shader/chunk/random.chunk";
 
 export const frag=/*glsl */`varying vec3 vPosition;
 varying vec3 vNormal;
@@ -18,7 +18,7 @@ void main() {
     vec3 mask = col.rgb;
 
     vec3 col_r = mix(vec3(23., 145., 250.)/255.,vec3(0.93),vec3(pow(mask.r,0.4)));
-    
+
     col = vec4(col_r,col.a);
     col.rgb = ACES_Inv(col.rgb);
 

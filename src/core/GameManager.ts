@@ -1,4 +1,4 @@
-import { EventEmitter, MathUtils } from "../libs/xviewer";
+import { EventEmitter, MathUtils } from "~/libs/xviewer";
 
 class TaskManager {
     private _taskCount: number = 0;

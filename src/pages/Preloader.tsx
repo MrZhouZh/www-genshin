@@ -1,8 +1,9 @@
-import "./Preloader.less";
 import { useEffect, useRef, useState } from "react"
 import { useScheduler } from "./Scheduler";
-import { MathUtils } from "../libs/xviewer";
-import { gameManager } from "../core/GameManager";
+import { MathUtils } from "~/libs/xviewer";
+import { gameManager } from "~/core/GameManager";
+
+import "./Preloader.less";
 
 export function Preloader() {
   const progressRef = useRef();

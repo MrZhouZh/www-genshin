@@ -1,6 +1,7 @@
-import "./Menu.less";
 import { useEffect, useRef, useState } from "react"
-import { gameManager } from "../core/GameManager";
+import { gameManager } from "~/core/GameManager";
+
+import "./Menu.less";
 
 export function Menu() {
   const [login, setLogin] = useState(false);

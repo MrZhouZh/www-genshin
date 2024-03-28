@@ -5,12 +5,12 @@ import {
     PlaneGeometry,
     Quaternion,
     Vector3
-} from "../../libs/xviewer";
+} from "~/libs/xviewer";
 
-import { MashList } from "../datas/CloudList";
+import { MashList } from '~/core/datas/CloudList'
+import { zLength } from "~/core/datas/Config";
 import { M_Cloud } from "./Materials";
 import { cameraCenter } from "./ForwardCamera";
-import { zLength } from "../datas/Config";
 
 export class Cloud extends Component {
     private posList: Vector3[] = [];

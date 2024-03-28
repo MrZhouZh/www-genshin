@@ -1,4 +1,4 @@
-import { ACES_Inv } from "../chunk/ACES.chunk";
+import { ACES_Inv } from "~/shader/chunk/ACES.chunk";
 
 export const frag =/*glsl */`uniform vec3 diffuse;
 uniform float opacity;

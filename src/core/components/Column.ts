@@ -6,9 +6,9 @@ import {
     Mesh,
     Quaternion,
     Vector3
-} from "../../libs/xviewer";
-import { MashList } from "../datas/ColumnList";
-import { zLength } from "../datas/Config";
+} from "~/libs/xviewer";
+import { MashList } from "~/core/datas/ColumnList";
+import { zLength } from "~/core/datas/Config";
 
 import { cameraCenter } from "./ForwardCamera";
 import { toonMaterials } from "./Materials";

@@ -1,5 +1,5 @@
-import { ACES_Inv } from "../chunk/ACES.chunk";
-import { random } from "../chunk/random.chunk";
+import { ACES_Inv } from "~/shader/chunk/ACES.chunk";
+import { random } from "~/shader/chunk/random.chunk";
 
 export const frag=/*glsl */`varying vec3 vPosition;
 varying vec3 vNormal;

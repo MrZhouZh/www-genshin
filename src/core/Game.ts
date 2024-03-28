@@ -12,7 +12,7 @@ import {
     BloomPlugin,
     TWEEN,
     $r,
-} from "../libs/xviewer";
+} from "~/libs/xviewer";
 
 import { User } from "./User";
 import { gameManager } from "./GameManager";

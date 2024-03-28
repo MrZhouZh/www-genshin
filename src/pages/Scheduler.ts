@@ -1,5 +1,5 @@
 import { DependencyList, useCallback, useEffect, useState } from "react";
-import { Scheduler } from "../libs/xviewer";
+import { Scheduler } from "~/libs/xviewer";
 
 let scheduler = new Scheduler();
 

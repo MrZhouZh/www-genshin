@@ -4,7 +4,7 @@ import {
     AmbientLight,
     property,
     $p
-} from "../../libs/xviewer";
+} from "~/libs/xviewer";
 
 
 export class AmbientLightComponent extends Component<AmbientLight> {
